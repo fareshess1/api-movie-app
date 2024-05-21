@@ -6,7 +6,6 @@
 </script>
 
 <div class="card lg:card-side bg-base-100 shadow-xl">
-<!-- <div class="card lg:card-side bg-neutral-content shadow-xl"> -->
 	<a data-sveltekit-prefetch data-sveltekit-noscroll href={'/movie/' + movie.id}>
 		<figure>
 			<img src={'https://image.tmdb.org/t/p/w500' + movie.poster_path} alt={movie.title} />
@@ -29,7 +28,6 @@
 <style>
 	img {
 		width: 90%;
-		/* height: 30vh; */
 		object-fit: cover;
 		border-radius: 1rem;
 		margin-bottom: 1rem;
@@ -48,6 +46,5 @@
 		flex-direction: column;
 		justify-content: space-around;
 		padding: 0rem;
-		/* padding: 1rem; */
 	}
 </style>

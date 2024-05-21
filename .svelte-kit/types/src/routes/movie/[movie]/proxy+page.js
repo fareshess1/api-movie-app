@@ -1,10 +1,10 @@
 // @ts-nocheck
 import { error } from '@sveltejs/kit';
+const apiKey = import.meta.env.VITE_API_KEY;
 
 /** @param {Parameters<import('./$types').PageLoad>[0]} event */
 
 export async function load({ params }) {
-	const apiKey = 'de7ea56acd96105cf1da010ced0122ec';
 	let api = `
           https://api.themoviedb.org/3/movie/${params.movie}?api_key=${apiKey}&language=en-US
             `;

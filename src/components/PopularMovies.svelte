@@ -1,5 +1,4 @@
 <script>
-	// @ts-ignore
 	export let listMovies;
 	import MovieCard from './MovieCard.svelte';
 </script>
@@ -17,9 +16,7 @@
 	.popular-movies {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-		/* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
 		grid-column-gap: 0rem;
-		/* grid-column-gap: 1rem; */
 		grid-row-gap: 2rem;
 		padding: 2%;
 	}
